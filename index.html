@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Misc15</title>
+</head>
+<body>
+
+    <script>
+        var amount = 82;
+        var centArray = [25,10,5,2,1];
+        function main(amount, centArray) {
+            var add = 0;
+            centArray.sort();
+            for (var i=0; i< centArray.length; i++){
+                add += centArray[i];
+                console.log("Adding " + add);
+            }
+            if(add < amount){
+                for (var j=0; add<= amount; j++){
+                    add += centArray[j];
+                    console.log("Adding " + add);
+                }
+                    }
+            console.log("Result: " + amount + " = " + add)
+        }
+
+        main(amount, centArray);
+    </script>
+
+</body>
+</html>
